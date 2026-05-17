@@ -1,0 +1,82 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Secure Neon Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="login-box">
+
+            <div class="left">
+
+                <h1>Login</h1>
+
+                <div class="input-box">
+
+                    <input type="text" placeholder="Username or Email" required>
+
+                    <i class='bx bxs-user'></i>
+
+                </div>
+
+                <div class="input-box">
+
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+
+                    <i class='bx bx-show toggle-password' id="toggleLogin"></i>
+
+                </div>
+
+                <div class="captcha">
+
+                    <input type="checkbox" id="robot">
+
+                    <span>I'm not a robot</span>
+
+                </div>
+
+                <button onclick="login()">Login</button>
+
+                <p id="attemptMessage"></p>
+
+                <a href="#" class="forgot">Forgot Password?</a>
+
+                <p class="account-text">
+
+                    Don't have an account?
+
+                    <a href="register.html">Sign Up</a>
+
+                </p>
+
+            </div>
+
+            <div class="right">
+
+                <h2>WELCOME BACK</h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
